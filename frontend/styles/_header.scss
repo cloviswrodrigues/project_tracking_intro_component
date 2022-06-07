@@ -1,0 +1,16 @@
+.header {
+    padding-top: 3rem;
+    .container {        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+        gap: 4rem;
+
+        &__link {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$color-red: hsl(0, 100%, 68%);
+
+$color-very-dark-blue: hsl(230, 29%, 20%);
+$color-dark-grayish-blue: hsl(230, 11%, 40%);
+$color-grayish-blue: hsl(231, 7%, 65%);
+$color-light-grayish-blue: hsl(207, 33%, 95%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-family: Barlow, sans-serif;
+    font-size: 10px;
+}
