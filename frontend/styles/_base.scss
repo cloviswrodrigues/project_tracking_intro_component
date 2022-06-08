@@ -24,3 +24,14 @@ html {
     font-family: Barlow, sans-serif;
     font-size: 10px;
 }
+
+.bg-square-blue {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    border-radius: 80px;
+    background-color: $color-light-grayish-blue;
+    width: calc(50vw + 80px);
+    height: calc(50vh + 80px);
+    z-index: -1;
+}

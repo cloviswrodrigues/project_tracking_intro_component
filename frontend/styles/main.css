@@ -19,8 +19,19 @@ html {
   font-size: 10px;
 }
 
+.bg-square-blue {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  border-radius: 80px;
+  background-color: #eef3f6;
+  width: calc(50vw + 80px);
+  height: calc(50vh + 80px);
+  z-index: -1;
+}
+
 .header {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .header .container {
@@ -40,6 +51,13 @@ html {
 }
 
 .header .menu__link {
+  font-size: 1.6rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.header .menu__link:last-child {
+  margin-left: 10rem;
 }
 /*# sourceMappingURL=main.css.map */
