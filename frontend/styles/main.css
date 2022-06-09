@@ -14,9 +14,18 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 html {
   font-family: Barlow, sans-serif;
   font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
 }
 
 .bg-square-blue {
@@ -59,5 +68,44 @@ html {
 
 .header .menu__link:last-child {
   margin-left: 10rem;
+}
+
+.section {
+  margin-top: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.text-emphasis {
+  background-color: #242942;
+  padding: .4rem 1rem;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-family: Barlow Condensed, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eef3f6;
+}
+
+.text-spaced {
+  font-size: 1.6rem;
+  font-family: Barlow Condensed, sans-serif;
+  letter-spacing: .5rem;
+  color: #a0a1ac;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
