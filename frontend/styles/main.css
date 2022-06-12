@@ -75,7 +75,13 @@ a {
 }
 
 .header .menu__link:last-child {
-  margin-left: 10rem;
+  margin-left: 5rem;
+}
+
+.header .menu__link:last-child li {
+  list-style: initial;
+  padding-left: 5rem;
+  color: #a0a1ac;
 }
 
 .footer {
