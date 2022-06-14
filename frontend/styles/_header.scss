@@ -22,7 +22,15 @@
                     list-style: initial;
                     padding-left: 5rem;
                     color: $color-grayish-blue;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
+            }
+
+            &:hover {
+                text-decoration: underline;
             }
         }        
     }
