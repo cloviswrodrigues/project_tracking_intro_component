@@ -5,6 +5,8 @@ $color-dark-grayish-blue: hsl(230, 11%, 40%);
 $color-grayish-blue: hsl(231, 7%, 65%);
 $color-light-grayish-blue: hsl(207, 33%, 95%);
 
+$break-mobile: 900px;
+
 * {
     margin: 0;
     padding: 0;
@@ -32,10 +34,6 @@ body {
 
 li {
     list-style: none;
-}
-
-img {
-    width: 100%;
 }
 
 a {
