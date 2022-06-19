@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 144rem;
     margin: 0 auto;
 }
@@ -51,6 +51,6 @@ a {
     border-radius: 80px;
     background-color: $color-light-grayish-blue;
     width: calc(50vw + 80px);
-    height: calc(50vh + 80px);
+    height: calc(50vh + 110px);
     z-index: -1;
 }
