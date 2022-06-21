@@ -98,26 +98,52 @@ a {
 }
 
 .header .nav-mobile .btn-menu {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 25px;
-  border-top: 2px solid black;
+  height: 20px;
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
-.header .nav-mobile .btn-menu::before {
-  content: '';
-  display: block;
+.header .nav-mobile .btn-menu .menu-line {
+  background-color: black;
   width: 100%;
   height: 2px;
-  background-color: black;
-  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
-.header .nav-mobile .btn-menu::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  margin-top: 4px;
+.header .nav-mobile .btn-menu .line-1, .header .nav-mobile .btn-menu .line-3 {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.header .nav-mobile .btn-menu-open {
+  background-color: transparent;
+}
+
+.header .nav-mobile .btn-menu-open .menu-line {
+  margin-bottom: 0;
+}
+
+.header .nav-mobile .btn-menu-open .line-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.header .nav-mobile .btn-menu-open .line-2 {
+  display: none;
+}
+
+.header .nav-mobile .btn-menu-open .line-3 {
+  position: relative;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header .nav-mobile .mobile-menu {
@@ -126,7 +152,9 @@ a {
   right: 0;
   width: 288px;
   max-width: 500px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -141,6 +169,11 @@ a {
   border-radius: .5rem;
   -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
           box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
 
 .header .nav-mobile .mobile-menu__link {
@@ -166,9 +199,9 @@ a {
 }
 
 .header .nav-mobile .open-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media screen and (max-width: 900px) {
