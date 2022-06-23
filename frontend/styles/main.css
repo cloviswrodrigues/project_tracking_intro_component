@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  position: fixed;
 }
 
 .container {
@@ -35,13 +36,20 @@ a {
 
 .bg-square-blue {
   position: absolute;
-  top: -80px;
-  right: -80px;
-  border-radius: 80px;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 80px;
   background-color: #eef3f6;
-  width: calc(50vw + 80px);
-  height: calc(50vh + 110px);
+  width: 50vw;
+  height: 51vh;
   z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+  .bg-square-blue {
+    height: 56vh;
+    border-bottom-left-radius: 60px;
+  }
 }
 
 .header {
@@ -235,6 +243,10 @@ a {
   color: #3e52a3;
 }
 
+main {
+  height: 100%;
+}
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,7 +255,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 720px;
+  height: 80%;
 }
 
 .section__flex {
@@ -269,7 +281,7 @@ a {
 @media screen and (max-width: 900px) {
   .section {
     margin-top: 3rem;
-    height: 100%;
+    height: 80%;
   }
   .section__flex {
     -webkit-box-orient: vertical;

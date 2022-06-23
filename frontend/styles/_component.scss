@@ -1,8 +1,12 @@
+main {
+    height: 100%;
+}
+
 .section {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 720px;
+    height: 80%;
 
     &__flex {
         display: flex;
@@ -24,7 +28,7 @@
 
     @media screen and (max-width: $break-mobile) {
         margin-top: 3rem;
-        height: 100%;
+        height: 80%;
         
         &__flex {
             flex-direction: column-reverse;
